@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: url('images.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(45, 87, 44, 0.8);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            display: block;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: rgba(60, 118, 61, 0.9);
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+        }
+
+        nav ul ul li {
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .features h2 {
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: rgba(45, 87, 44, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            nav ul li {
+                margin-bottom: 1rem;
+            }
+
+            .feature-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AgriWorld</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Podcast</a>
+                    <ul>
+                        <li><a href="#">Latest Episodes</a></li>
+                        <li><a href="#">Topics</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Workshops</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to AgriWorld</h1>
+        <p>Your gateway to smart and sustainable agriculture solutions</p>
+        <a href="#" class="cta">Get Started</a>
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Smart Farming</h3>
+                <p>Leverage technology to optimize your crop yields and farm productivity.</p>
+            </div>
+            <div class="feature">
+                <h3>Sustainability</h3>
+                <p>Adopt eco-friendly practices to protect the environment for future generations.</p>
+            </div>
+            <div class="feature">
+                <h3>Market Insights</h3>
+                <p>Stay updated with the latest trends and prices in the agricultural market.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AgriWorld. All rights reserved.</p>
+        <p><a href="#" style="color: #a8e6a3; text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: #a8e6a3; text-decoration: underline;">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>
